@@ -1,3 +1,3 @@
-# Herma Icons
+# Herma Icons 🗿
 
 Simple icons
