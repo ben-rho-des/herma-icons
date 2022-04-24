@@ -47,21 +47,21 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.15.5",
+    "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.14.5",
-    "@changesets/changelog-github": "^0.4.1",
-    "@changesets/cli": "^2.17.0",
-    "@svgr/cli": "^5.5.0",
-    "@svgr/core": "^5.5.0",
-    "camelcase": "^6.2.0",
+    "@babel/preset-react": "^7.16.7",
+    "@changesets/changelog-github": "^0.4.4",
+    "@changesets/cli": "^2.22.0",
+    "@svgr/cli": "^6.2.1",
+    "@svgr/core": "^6.2.1",
+    "camelcase": "^6.3.0",
     "copyfiles": "^2.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
     "rimraf": "^3.0.2",
-    "svgo": "^2.5.0",
-    "terser": "^5.7.2"
+    "svgo": "^2.8.0",
+    "terser": "^5.12.1"
   },
   "peerDependencies": {
     "react": "^16.13.1 || ^17.0.1",
