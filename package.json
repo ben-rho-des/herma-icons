@@ -1,0 +1,70 @@
+{
+  "name": "herma-icons",
+  "version": "1.0.0",
+  "description": "Herma UI SVG icons library",
+  "keywords": [
+    "react",
+    "icon"
+  ],
+  "bugs": {
+    "url": "https://github.com/ben-rho-des/herma-icons/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben-rho-des/herma-icons.git"
+  },
+  "license": "MIT",
+  "author": "ben-rho-des",
+  "sideEffects": false,
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn optimize && node scripts/build.js",
+    "build:atellier": "rimraf src/icons && copyfiles --flat dist/cjs/* src/icons && react-scripts build",
+    "optimize": "rimraf ./optimized & svgo -q -p 8 -f ./raw -o ./optimized",
+    "release": "yarn changeset publish",
+    "start:atellier": "rimraf src/icons && copyfiles --flat dist/cjs/* src/icons && react-scripts start"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.14.5",
+    "@changesets/changelog-github": "^0.4.1",
+    "@changesets/cli": "^2.17.0",
+    "@svgr/cli": "^5.5.0",
+    "@svgr/core": "^5.5.0",
+    "camelcase": "^6.2.0",
+    "copyfiles": "^2.4.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1",
+    "rimraf": "^3.0.2",
+    "svgo": "^2.5.0",
+    "terser": "^5.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1 || ^17.0.1",
+    "react-dom": "^16.13.1 || ^17.0.1"
+  }
+}
